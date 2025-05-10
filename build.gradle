@@ -12,14 +12,14 @@ dependencies {
     // https://mvnrepository.com/artifact/com.evolveum.commons/test-ng
     testImplementation 'com.evolveum.commons:test-ng:4.9.2'
 }
+test {
+    useTestNG()
+}
 application {
     mainClass = 'org.example.Main'
-     }
+}
 jar {
     manifest {
         attributes 'Main-Class':'org.example.Main'
     }
-}
-test {
-    useTestNG()
 }
